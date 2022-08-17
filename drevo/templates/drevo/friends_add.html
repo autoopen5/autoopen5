@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Друзья{% endblock %}
+
+{% block content %}
+
+<h2>Добавить новых друзей</h2>
+<form action="" method="post">
+    {% csrf_token %}
+    <div class="row">
+        <div class="col">
+            {{ form }}
+            <input type="submit" class="btn btn-secondary btn-sm" value="Добавить">
+        </div>
+    </div>
+</form>
+<br>
+<hr>
+
+{% endblock content %}
+
